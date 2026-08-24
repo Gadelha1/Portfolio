@@ -5,16 +5,25 @@ export interface Attribute {
   description: string;
 }
 
-export interface SkillNode {
+export interface MasteryNode {
   name: string;
-  level: "iniciante" | "intermediario" | "avancado";
+  description: string;
+  rank: number;
+  maxRank: number;
+  icon?: string[];
   status?: "aprendendo";
+  capstone?: boolean;
 }
 
-export interface SkillBranch {
+export interface MasteryTier {
+  requirement: number;
+  nodes: MasteryNode[];
+}
+
+export interface MasteryTree {
   id: string;
   label: string;
-  skills: SkillNode[];
+  tiers: MasteryTier[];
 }
 
 export const profile = {
@@ -71,42 +80,173 @@ export const attributes: Attribute[] = [
   },
 ];
 
-export const skillBranches: SkillBranch[] = [
+export const masteryTrees: MasteryTree[] = [
   {
     id: "linguagens",
     label: "Linguagens",
-    skills: [
-      { name: "JavaScript", level: "intermediario" },
-      { name: "TypeScript", level: "iniciante" },
-      { name: "SQL", level: "intermediario" },
+    tiers: [
+      {
+        requirement: 0,
+        nodes: [
+          {
+            name: "JavaScript",
+            description: "A linguagem da web: DOM, eventos e lógica no lado do cliente.",
+            icon: ["/icons/javascript.svg"],
+            rank: 3,
+            maxRank: 4,
+          },
+          {
+            name: "Kotlin",
+            description: "Linguagem para desenvolvimento multiplataforma.",
+            rank: 1,
+            maxRank: 4,
+            status: "aprendendo",
+          },
+          {
+            name: "SQL",
+            description: "Consultas, e modelagem relacional de dados.",
+            rank: 3,
+            maxRank: 4,
+          },
+        ],
+      },
+      {
+        requirement: 4,
+        nodes: [
+          {
+            name: "TypeScript",
+            description: "Tipagem estática sobre JavaScript para código mais previsível.",
+            icon: ["/icons/typescript.svg"],
+            rank: 2,
+            maxRank: 4,
+            status: "aprendendo",
+          },
+        ],
+      },
     ],
   },
   {
     id: "mobile",
     label: "Mobile",
-    skills: [
-      { name: "React Native", level: "intermediario" },
-      { name: "Expo", level: "intermediario" },
-      { name: "React Navigation", level: "intermediario" },
+    tiers: [
+      {
+        requirement: 0,
+        nodes: [
+          {
+            name: "React Native",
+            description: "Apps nativos para iOS e Android com componentes React.",
+            icon: ["/icons/react-native.svg"],
+            rank: 4,
+            maxRank: 4,
+          },
+        ],
+      },
+      {
+        requirement: 4,
+        nodes: [
+          {
+            name: "Expo",
+            description: "Toolchain para criar, testar e distribuir apps React Native.",
+            icon: ["/icons/expo.svg"],
+            rank: 3,
+            maxRank: 4,
+          },
+          {
+            name: "React Navigation",
+            description: "Navegação em stacks, abas e passagem de parâmetros.",
+            rank: 4,
+            maxRank: 4,
+          },
+        ],
+      },
     ],
   },
   {
     id: "frontend",
     label: "Front-end",
-    skills: [
-      { name: "React", level: "intermediario" },
-      { name: "Tailwind CSS", level: "iniciante" },
-      { name: "HTML & CSS", level: "intermediario" },
-      { name: "Bootstrap", level: "iniciante" },
+    tiers: [
+      {
+        requirement: 0,
+        nodes: [
+          {
+            name: "HTML & CSS",
+            description: "Estrutura semântica e estilização: a fundação das interfaces.",
+            icon: ["/icons/html5.svg", "/icons/css3.svg"],
+            rank: 4,
+            maxRank: 4,
+          },
+        ],
+      },
+      {
+        requirement: 4,
+        nodes: [
+          {
+            name: "React",
+            description: "Componentes, hooks e composição de interfaces reativas.",
+            icon: ["/icons/react.svg"],
+            rank: 4,
+            maxRank: 4,
+          },
+          {
+            name: "Bootstrap",
+            description: "Grid e utilitários prontos para prototipagem rápida.",
+            icon: ["/icons/bootstrap.svg"],
+            rank: 3,
+            maxRank: 4,
+          },
+        ],
+      },
+      {
+        requirement: 8,
+        nodes: [
+          {
+            name: "Tailwind CSS",
+            description: "Estilização utilitária direto no markup — usada neste portfólio.",
+            icon: ["/icons/tailwindcss.svg"],
+            rank: 2,
+            maxRank: 4,
+            status: "aprendendo",
+          },
+        ],
+      },
     ],
   },
   {
     id: "ferramentas",
     label: "Ferramentas",
-    skills: [
-      { name: "Git & GitHub", level: "intermediario" },
-      { name: "VS Code", level: "avancado" },
-      { name: "Figma", level: "iniciante" },
+    tiers: [
+      {
+        requirement: 0,
+        nodes: [
+          {
+            name: "Git & GitHub",
+            description: "Versionamento, branches e colaboração em projetos.",
+            icon: ["/icons/git.svg"],
+            rank: 4,
+            maxRank: 4,
+          },
+          {
+            name: "Figma",
+            description: "Leitura de layouts e prototipação antes do código.",
+            icon: ["/icons/figma.svg"],
+            rank: 2,
+            maxRank: 4,
+          },
+        ],
+      },
+      {
+        requirement: 4,
+        nodes: [
+          {
+            name: "VS Code",
+            description: "Editor do dia a dia: atalhos, extensões e depuração.",
+            icon: ["/icons/vscode.svg"],
+            rank: 4,
+            maxRank: 4,
+            capstone: true,
+          },
+        ],
+      },
     ],
   },
 ];

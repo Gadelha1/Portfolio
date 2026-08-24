@@ -63,6 +63,7 @@ main {
   margin-inline: auto;
   max-width: 72rem;
   scroll-margin-top: 7rem;
+  --section-gap: 3rem;
   padding-block: 5rem;
   padding-inline: 1rem;
 }
@@ -471,9 +472,28 @@ main {
   color: var(--color-mist-500);
 }
 
-/* ---------- Árvore de talentos ---------- */
+/* ---------- Árvores de talento (masteries clássicas) ----------
+   Moldura octogonal em duas camadas com clip-path (externa bronze,
+   interna escura). O brilho usa drop-shadow, que respeita o recorte
+   do octógono — box-shadow seria cortado pelo clip-path. */
 
-.branch-label {
+.mastery-tree {
+  display: flex;
+  flex-direction: column;
+}
+
+.mastery-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--color-gold-500) 35%, transparent);
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.75rem;
+}
+
+.mastery-title {
   font-family: var(--font-display);
   font-size: 0.875rem;
   font-weight: 700;
@@ -482,47 +502,256 @@ main {
   color: var(--color-gold-500);
 }
 
-.skill-node {
+.mastery-points {
+  border-radius: 9999px;
+  border: 1px solid color-mix(in srgb, var(--color-gold-500) 40%, transparent);
+  background: color-mix(in srgb, var(--color-gold-500) 10%, transparent);
+  padding: 0.125rem 0.625rem;
+  font-size: 0.75rem;
+  color: var(--color-gold-300);
+}
+
+.connector {
+  width: 1px;
+  height: 1.75rem;
+  margin-inline: auto;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    color-mix(in srgb, var(--color-gold-500) 45%, transparent),
+    color-mix(in srgb, var(--color-gold-500) 45%, transparent)
+  );
+}
+
+.tier-band {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
-  text-align: center;
-}
-
-.skill-dot {
-  height: 0.75rem;
-  width: 0.75rem;
-  border-radius: 9999px;
-  background: var(--node-color);
-  box-shadow: 0 0 14px var(--node-color);
-}
-
-.skill-name {
-  font-size: 0.875rem;
-  color: var(--color-mist-100);
-}
-
-.skill-status {
-  border-radius: 9999px;
-  border: 1px solid color-mix(in srgb, var(--color-arcane-400) 40%, transparent);
-  padding: 0.125rem 0.5rem;
-  font-size: 10px;
+  gap: 0.75rem;
+  margin-block: 0.375rem;
+  font-size: 0.625rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
+  color: var(--color-mist-500);
+}
+
+.tier-band::before,
+.tier-band::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in srgb, var(--color-night-700) 90%, transparent)
+  );
+}
+
+.tier-band::after {
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--color-night-700) 90%, transparent),
+    transparent
+  );
+}
+
+.tier-nodes {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  padding-block: 0.25rem;
+}
+
+.mastery-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.mastery-node {
+  position: relative;
+  display: block;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+.mastery-frame {
+  --glow-color: var(--color-gold-500);
+  --glow-strength: 4;
+  display: block;
+  width: 3.5rem;
+  aspect-ratio: 1;
+  clip-path: polygon(
+    30% 0,
+    70% 0,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0 70%,
+    0 30%
+  );
+  background: linear-gradient(160deg, var(--color-gold-400), var(--color-gold-600));
+  transition: filter 0.3s ease-out;
+  filter: drop-shadow(
+    0 0
+      calc(var(--glow-strength) * 1px)
+      color-mix(in srgb, var(--glow-color) 70%, transparent)
+  );
+}
+
+.mastery-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  margin: 3px;
+  clip-path: inherit;
+  background: linear-gradient(160deg, var(--color-night-800), var(--color-night-900));
+  font-family: var(--font-display);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--color-mist-300);
+}
+
+.mastery-logo {
+  height: 50%;
+  width: auto;
+  max-width: 40%;
+  object-fit: contain;
+}
+
+.is-partial .mastery-icon {
+  color: var(--color-mist-400);
+}
+
+.is-learning .mastery-frame {
+  --glow-color: var(--color-arcane-400);
+  animation: mastery-pulse 2.4s ease-in-out infinite;
+}
+
+.is-learning .mastery-icon {
   color: var(--color-arcane-300);
 }
 
-/* desenho do caminho: pathLength=1 normaliza o traço;
-   dashoffset 1 → 0 "desenha" a linha ao entrar na viewport */
-.skill-path {
-  stroke-dasharray: 1;
-  stroke-dashoffset: 1;
-  transition: stroke-dashoffset 1.8s ease-out;
+@keyframes mastery-pulse {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 3px color-mix(in srgb, var(--color-arcane-500) 60%, transparent));
+  }
+  50% {
+    filter: drop-shadow(0 0 14px color-mix(in srgb, var(--color-arcane-400) 80%, transparent));
+  }
 }
 
-.skill-tree.is-visible .skill-path {
-  stroke-dashoffset: 0;
+.is-max .mastery-frame {
+  --glow-strength: 10;
+}
+
+.is-max .mastery-icon {
+  color: var(--color-gold-300);
+}
+
+.is-capstone .mastery-frame {
+  width: 4.25rem;
+  --glow-strength: 14;
+  background: linear-gradient(160deg, var(--color-arcane-400), var(--color-gold-600));
+}
+
+.is-capstone .mastery-icon {
+  font-size: 1.125rem;
+  color: var(--color-gold-300);
+}
+
+.mastery-rank {
+  position: absolute;
+  right: -0.375rem;
+  bottom: -0.375rem;
+  border-radius: 9999px;
+  border: 1px solid var(--color-night-700);
+  background: var(--color-night-900);
+  padding: 0.0625rem 0.375rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: var(--color-mist-300);
+}
+
+.is-max .mastery-rank,
+.is-capstone .mastery-rank {
+  border-color: color-mix(in srgb, var(--color-gold-500) 50%, transparent);
+  color: var(--color-gold-300);
+}
+
+/* tooltip estilo client antigo: hover/foco no desktop, toque fixa no mobile */
+.tooltip {
+  position: absolute;
+  bottom: calc(100% + 0.875rem);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 30;
+  width: 15rem;
+  border-radius: 0.5rem;
+  border: 1px solid color-mix(in srgb, var(--color-gold-500) 35%, transparent);
+  background: linear-gradient(
+    160deg,
+    color-mix(in srgb, var(--color-night-800) 98%, transparent),
+    color-mix(in srgb, var(--color-night-950) 98%, transparent)
+  );
+  box-shadow: 0 16px 32px -12px rgba(0, 0, 0, 0.8);
+  padding: 0.75rem 0.875rem;
+  text-align: left;
+  pointer-events: none;
+  animation: fade 0.15s ease-out;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 0.625rem;
+  height: 0.625rem;
+  translate: -50% -50%;
+  rotate: 45deg;
+  background: var(--color-night-950);
+  border-right: 1px solid
+    color-mix(in srgb, var(--color-gold-500) 35%, transparent);
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--color-gold-500) 35%, transparent);
+}
+
+.tooltip-name {
+  font-family: var(--font-display);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--color-mist-100);
+}
+
+.tooltip-rank {
+  margin-top: 0.125rem;
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-gold-400);
+}
+
+.tooltip-desc {
+  margin-top: 0.375rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: var(--color-mist-400);
+}
+
+.tooltip-status {
+  margin-top: 0.25rem;
+  font-size: 0.6875rem;
+  font-style: italic;
+  color: var(--color-arcane-300);
 }
 
 /* ---------- Cards de quest ---------- */
