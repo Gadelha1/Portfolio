@@ -1,5 +1,6 @@
 import { useState } from "react";
 import type { MasteryNode as NodeData } from "@/data/profile";
+import "./css/MasteryNode.css";
 
 interface MasteryNodeProps {
   node: NodeData;

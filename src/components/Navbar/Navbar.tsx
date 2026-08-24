@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import type { CSSProperties } from "react";
+import "./css/Navbar.css";
 
 const links = [
   { href: "#atributos", label: "Atributos" },

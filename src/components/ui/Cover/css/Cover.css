@@ -1,0 +1,55 @@
+/* ---------- Capa de projeto ---------- */
+
+.cover {
+  position: relative;
+  display: flex;
+  height: 11rem;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .cover {
+    height: 14rem;
+  }
+}
+
+.cover-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cover-iniciais {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  color: rgba(245, 242, 232, 0.9);
+}
+
+.cover-hatch {
+  position: absolute;
+  inset: 0;
+  opacity: 0.15;
+  background-image: repeating-linear-gradient(
+    45deg,
+    currentColor 0,
+    currentColor 1px,
+    transparent 1px,
+    transparent 8px
+  );
+}
+
+.cover-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    color-mix(in srgb, var(--color-night-950) 75%, transparent),
+    transparent
+  );
+}

@@ -1,5 +1,6 @@
 import type { CSSProperties } from "react";
 import { useReveal } from "@/hooks/useReveal";
+import "./css/AttributeBar.css";
 
 interface AttributeBarProps {
   label: string;

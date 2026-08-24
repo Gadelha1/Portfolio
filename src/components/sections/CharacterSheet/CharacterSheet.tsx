@@ -1,7 +1,7 @@
 import { attributes } from "@/data/profile";
-import { AttributeBar } from "@/components/ui/AttributeBar";
-import { SectionHeading } from "@/components/ui/SectionHeading";
-import { Reveal } from "@/components/ui/Reveal";
+import { AttributeBar } from "@/components/ui/AttributeBar/AttributeBar";
+import { SectionHeading } from "@/components/ui/SectionHeading/SectionHeading";
+import { Reveal } from "@/components/ui/Reveal/Reveal";
 
 export function CharacterSheet() {
   return (

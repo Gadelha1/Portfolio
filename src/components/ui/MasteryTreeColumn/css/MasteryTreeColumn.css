@@ -1,0 +1,85 @@
+/* ---------- Coluna da árvore de masteries ---------- */
+
+.mastery-tree {
+  display: flex;
+  flex-direction: column;
+}
+
+.mastery-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--color-gold-500) 35%, transparent);
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.75rem;
+}
+
+.mastery-title {
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: var(--color-gold-500);
+}
+
+.mastery-points {
+  border-radius: 9999px;
+  border: 1px solid color-mix(in srgb, var(--color-gold-500) 40%, transparent);
+  background: color-mix(in srgb, var(--color-gold-500) 10%, transparent);
+  padding: 0.125rem 0.625rem;
+  font-size: 0.75rem;
+  color: var(--color-gold-300);
+}
+
+.connector {
+  width: 1px;
+  height: 1.75rem;
+  margin-inline: auto;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    color-mix(in srgb, var(--color-gold-500) 45%, transparent),
+    color-mix(in srgb, var(--color-gold-500) 45%, transparent)
+  );
+}
+
+.tier-band {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-block: 0.375rem;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-mist-500);
+}
+
+.tier-band::before,
+.tier-band::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in srgb, var(--color-night-700) 90%, transparent)
+  );
+}
+
+.tier-band::after {
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--color-night-700) 90%, transparent),
+    transparent
+  );
+}
+
+.tier-nodes {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  padding-block: 0.25rem;
+}

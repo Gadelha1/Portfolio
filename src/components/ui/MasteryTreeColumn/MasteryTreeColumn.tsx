@@ -1,5 +1,6 @@
 import type { MasteryTree } from "@/data/profile";
-import { MasteryNode } from "./MasteryNode";
+import { MasteryNode } from "../MasteryNode/MasteryNode";
+import "./css/MasteryTreeColumn.css";
 
 interface MasteryTreeColumnProps {
   tree: MasteryTree;

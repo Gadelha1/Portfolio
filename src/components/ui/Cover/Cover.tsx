@@ -1,3 +1,5 @@
+import "./css/Cover.css";
+
 interface CoverProps {
   accent: string;
   titulo: string;

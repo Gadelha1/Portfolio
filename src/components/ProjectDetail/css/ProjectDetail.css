@@ -1,0 +1,11 @@
+/* ---------- Detalhe do projeto (dentro do modal) ---------- */
+
+.section-subtitle {
+  font-family: var(--font-display);
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-gold-500);
+}

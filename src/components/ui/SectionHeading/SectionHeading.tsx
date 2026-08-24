@@ -1,4 +1,5 @@
-import { Reveal } from "./Reveal";
+import { Reveal } from "../Reveal/Reveal";
+import "./css/SectionHeading.css";
 
 interface SectionHeadingProps {
   eyebrow: string;

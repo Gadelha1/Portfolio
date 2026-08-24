@@ -1,7 +1,8 @@
 import type { Project } from "@/data/projects";
-import { AttributeBar } from "./ui/AttributeBar";
-import { Cover } from "./ui/Cover";
-import { StarRating } from "./ui/StarRating";
+import { AttributeBar } from "@/components/ui/AttributeBar/AttributeBar";
+import { Cover } from "@/components/ui/Cover/Cover";
+import { StarRating } from "@/components/ui/StarRating/StarRating";
+import "./css/ProjectDetail.css";
 
 export function ProjectDetail({ project }: { project: Project }) {
   return (

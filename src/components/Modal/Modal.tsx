@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import type { Project } from "@/data/projects";
-import { ProjectDetail } from "./ProjectDetail";
+import { ProjectDetail } from "@/components/ProjectDetail/ProjectDetail";
+import "./css/Modal.css";
 
 interface ModalProps {
   project: Project;

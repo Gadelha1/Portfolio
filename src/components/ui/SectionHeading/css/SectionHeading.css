@@ -1,0 +1,51 @@
+/* ---------- Cabeçalho de seção ---------- */
+
+.eyebrow {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+  color: var(--color-gold-500);
+}
+
+.section-title {
+  font-family: var(--font-display);
+  margin-top: 0.75rem;
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--color-mist-100);
+  text-shadow: 0 0 24px color-mix(in srgb, var(--color-gold-500) 45%, transparent);
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 2.25rem;
+  }
+}
+
+.divider-ornament {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--color-gold-500);
+}
+
+.divider-ornament::before,
+.divider-ornament::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in srgb, var(--color-gold-500) 50%, transparent)
+  );
+}
+
+.divider-ornament::after {
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--color-gold-500) 50%, transparent),
+    transparent
+  );
+}

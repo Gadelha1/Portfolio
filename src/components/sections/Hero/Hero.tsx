@@ -1,5 +1,6 @@
 import type { CSSProperties } from "react";
 import { profile } from "@/data/profile";
+import "./css/Hero.css";
 
 const stacks = ["React Native", "Expo", "TypeScript", "React", "Tailwind CSS"];
 

@@ -1,6 +1,6 @@
 import { profile } from "@/data/profile";
-import { SectionHeading } from "@/components/ui/SectionHeading";
-import { Reveal } from "@/components/ui/Reveal";
+import { SectionHeading } from "@/components/ui/SectionHeading/SectionHeading";
+import { Reveal } from "@/components/ui/Reveal/Reveal";
 
 const redes = [
   {

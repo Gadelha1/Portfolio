@@ -1,7 +1,7 @@
 import { masteryTrees } from "@/data/profile";
-import { SectionHeading } from "@/components/ui/SectionHeading";
-import { MasteryTreeColumn } from "@/components/ui/MasteryTreeColumn";
-import { Reveal } from "@/components/ui/Reveal";
+import { SectionHeading } from "@/components/ui/SectionHeading/SectionHeading";
+import { MasteryTreeColumn } from "@/components/ui/MasteryTreeColumn/MasteryTreeColumn";
+import { Reveal } from "@/components/ui/Reveal/Reveal";
 
 export function SkillTree() {
   return (

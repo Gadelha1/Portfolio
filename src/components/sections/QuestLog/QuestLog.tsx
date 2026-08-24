@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { projects } from "@/data/projects";
 import type { Project } from "@/data/projects";
-import { SectionHeading } from "@/components/ui/SectionHeading";
-import { QuestCard } from "@/components/ui/QuestCard";
-import { Modal } from "@/components/Modal";
+import { SectionHeading } from "@/components/ui/SectionHeading/SectionHeading";
+import { QuestCard } from "@/components/ui/QuestCard/QuestCard";
+import { Modal } from "@/components/Modal/Modal";
 
 export function QuestLog() {
   const [selecionado, setSelecionado] = useState<Project | null>(null);

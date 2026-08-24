@@ -1,7 +1,8 @@
 import type { Project } from "@/data/projects";
 import { useReveal } from "@/hooks/useReveal";
-import { Cover } from "./Cover";
-import { StarRating } from "./StarRating";
+import { Cover } from "../Cover/Cover";
+import { StarRating } from "../StarRating/StarRating";
+import "./css/QuestCard.css";
 
 interface QuestCardProps {
   project: Project;

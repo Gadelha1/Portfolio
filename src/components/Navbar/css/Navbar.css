@@ -1,0 +1,63 @@
+/* ---------- Navbar ---------- */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--color-night-800) 70%, transparent);
+  background: color-mix(in srgb, var(--color-night-950) 70%, transparent);
+  backdrop-filter: blur(12px);
+}
+
+.navbar-inner {
+  margin-inline: auto;
+  max-width: 72rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 0.75rem;
+  padding-inline: 1rem;
+}
+
+.brand {
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-gold-400);
+  cursor: pointer;
+}
+
+.nav-link {
+  white-space: nowrap;
+  border-radius: 9999px;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.75rem;
+  color: var(--color-mist-300);
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+}
+
+.nav-link:hover {
+  background: var(--color-night-800);
+  color: var(--color-gold-300);
+}
+
+/* barra de progresso de leitura: o JS só atualiza --progress (0 a 1) */
+.nav-progress {
+  height: 2px;
+  transform-origin: left;
+  transform: scaleX(var(--progress, 0));
+  background: linear-gradient(
+    to right,
+    var(--color-gold-600),
+    var(--color-gold-400),
+    var(--color-arcane-400)
+  );
+}
