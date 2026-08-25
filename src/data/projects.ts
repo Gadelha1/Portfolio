@@ -33,8 +33,8 @@ export const projects: Project[] = [
     links: {
       github: "https://github.com/Gadelha1/AP1_RN",
     },
-    capitulo: " 5 Semestre - Desenvolvimento Mobile",
-    dificuldade: 3,
+    capitulo: "5º Semestre - Desenvolvimento Mobile",
+    dificuldade: 4,
     destaque: true,
     accent: "#7c3aed",
     stats: [
@@ -51,27 +51,28 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: "exemplo-web",
-    titulo: "Projeto Web (exemplo)",
-    subtitulo: "Substitua por um projeto seu · placeholder",
+    slug: "loja-visgo-de-jaca",
+    titulo: "Visgo de Jaca",
+    subtitulo: "Este projeto tem como objetivo desenvolver uma loja online que funcione tanto como uma vitrine para as artes da marca, quanto como uma plataforma de vendas direta ao consumidor. A Visgo de Jaca é uma marca nascida das raízes culturais da capoeira e da música, com ênfase na percussão. Fundada por Jaca, um ex-enfermeiro e artista autodidata, a marca destaca-se pela produção de estampas autorais que incorporam símbolos significativos da cultura sul-americana e da luta anticolonial.",
     descricao:
-      "Este é um projeto de exemplo para você preencher com um projeto real do seu curso (um CRUD, uma landing page, uma API, o que quiser). Edite este arquivo em src/data/projects.ts e troque título, descrição, stack, links e aprendizados.",
-    stack: ["React", "TypeScript", "Tailwind CSS"],
+      "Projeto realizado como trabalho final da disciplina de Desenvolvimento Web, do 3º semestre do curso de Desenvolvimento de Software Multiplataforma. O objetivo era desenvolver uma loja online que funcione como uma vitrine para as artes da marca, exibir as estampas do cliente e chamar os compradores para as redes sociais da marca.",
+    stack: ["JavaScript", "HTML", "Bootstrap CSS"],
     links: {
-      github: "https://github.com/Gadelha1",
+      github: "https://github.com/DSM2SEM2024/100esperanca",
     },
-    capitulo: "Semestre · Disciplina",
+    capitulo: "3º Semestre · Desenvolvimento Web",
     dificuldade: 2,
     destaque: false,
     accent: "#b8860b",
+    imagem: "/covers/visgo.jpg",
     stats: [
-      { label: "Front-end", value: 3 },
+      { label: "Front-end", value: 5 },
       { label: "Back-end", value: 2 },
-      { label: "Banco de Dados", value: 2 },
+      { label: "Banco de Dados", value: 1 },
     ],
     aprendizados: [
-      "Liste aqui o que você aprendeu com este projeto",
-      "Cada aprendizados vira uma linha nesta seção",
+      "Componentização de elementos Javascript;",
+      "Primeira utilização de media queries para responsividade;",
     ],
   },
   {
