@@ -30,22 +30,13 @@ export function Navbar() {
 
   return (
     <header className="navbar">
-      <div className="navbar-inner">
-        <button
-          type="button"
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="brand"
-        >
-          Gabriel Alves Gadelha
-        </button>
-        <nav className="flex items-center gap-1 overflow-x-auto">
-          {links.map((link) => (
-            <a key={link.href} href={link.href} className="nav-link">
-              {link.label}
-            </a>
-          ))}
-        </nav>
-      </div>
+      <nav className="navbar-inner">
+        {links.map((link) => (
+          <a key={link.href} href={link.href} className="nav-link">
+            {link.label}
+          </a>
+        ))}
+      </nav>
       <div className="nav-progress" style={{ "--progress": progress } as CSSProperties} />
     </header>
   );

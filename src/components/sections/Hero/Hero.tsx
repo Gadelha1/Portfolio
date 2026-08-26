@@ -20,6 +20,30 @@ export function Hero() {
 
           <h1 className="hero-name">{profile.nome}</h1>
           <p className="hero-title">{profile.titulo}</p>
+
+          <div className="hero-details">
+            <span className="hero-detail">
+              <span className="hero-detail-label">Semestre</span>
+              <span className="hero-detail-value">{profile.semestre_atual}</span>
+            </span>
+            <span className="hero-detail">
+              <span className="hero-detail-label">Conclusão</span>
+              <span className="hero-detail-value">{profile.conclusao_curso}</span>
+            </span>
+            <span className="hero-detail">
+              <span className="hero-detail-label">Local</span>
+              <span className="hero-detail-value">{profile.cidade}</span>
+            </span>
+          </div>
+
+          <div className="hero-actions">
+            <a href="#quests" className="btn-primary">
+              Ver missões
+            </a>
+            <a href="#atributos" className="btn-secondary">
+              A ficha
+            </a>
+          </div>
         </div>
       </div>
 

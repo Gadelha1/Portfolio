@@ -45,8 +45,8 @@ export function Contact() {
     <section id="contato" className="section">
       <SectionHeading
         eyebrow="Guilda"
-        title="Vamos embarcar numa quest?"
-        description="Estou aberto a oportunidades de estágio, projetos e boas conversas sobre código — e RPG."
+        title="Contatos"
+        description="Estou aberto a oportunidades, pode ser de estágio, de projetos ou simplesmente boas conversas sobre RPG."
       />
       <Reveal>
         <div className="panel-gold mx-auto max-w-2xl rounded-xl p-6 text-center md:p-10">

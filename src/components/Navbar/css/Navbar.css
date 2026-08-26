@@ -17,20 +17,10 @@
   max-width: 72rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
+  justify-content: center;
+  gap: 0.25rem;
   padding-block: 0.75rem;
   padding-inline: 1rem;
-}
-
-.brand {
-  font-family: var(--font-display);
-  font-size: 0.875rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: var(--color-gold-400);
-  cursor: pointer;
 }
 
 .nav-link {

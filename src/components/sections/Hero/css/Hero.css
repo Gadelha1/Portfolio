@@ -86,6 +86,34 @@
   color: var(--color-mist-500);
 }
 
+.hero-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem 1.5rem;
+  margin-top: 0.25rem;
+}
+
+.hero-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.125rem;
+}
+
+.hero-detail-label {
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-mist-500);
+}
+
+.hero-detail-value {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-gold-400);
+}
+
 .hero-actions {
   display: flex;
   gap: 0.75rem;
