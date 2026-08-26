@@ -194,3 +194,42 @@
 .btn-guilda:hover {
   background: color-mix(in srgb, var(--color-gold-500) 20%, transparent);
 }
+
+/* ---------- Botões temáticos (GitHub / Snack) ---------- */
+
+.btn-github,
+.btn-snack {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  padding: 0.625rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.btn-github:hover,
+.btn-snack:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
+
+.btn-github {
+  background: #24292e;
+  color: #fff;
+  border: 1px solid #444d56;
+}
+
+.btn-snack {
+  background: #000;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+.btn-github img,
+.btn-snack img {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}

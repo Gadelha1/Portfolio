@@ -1,4 +1,4 @@
-import { attributes } from "@/data/profile";
+import { attributes } from "@/data/skills";
 import { AttributeBar } from "@/components/ui/AttributeBar/AttributeBar";
 import { SectionHeading } from "@/components/ui/SectionHeading/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal/Reveal";

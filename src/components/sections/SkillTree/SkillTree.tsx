@@ -1,4 +1,4 @@
-import { masteryTrees } from "@/data/profile";
+import { masteryTrees } from "@/data/skills";
 import { SectionHeading } from "@/components/ui/SectionHeading/SectionHeading";
 import { MasteryTreeColumn } from "@/components/ui/MasteryTreeColumn/MasteryTreeColumn";
 import { Reveal } from "@/components/ui/Reveal/Reveal";

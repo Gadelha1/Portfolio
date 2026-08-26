@@ -11,6 +11,7 @@ export interface Project {
   stack: string[];
   links: {
     github?: string;
+    snack?: string;
     deploy?: string;
   };
   capitulo: string;
@@ -28,10 +29,11 @@ export const projects: Project[] = [
     titulo: "Catálogo de Jogos",
     subtitulo: "Atividade Prática · React Native",
     descricao:
-      "Aplicativo mobile com quatro abas e tema livre, construído como Atividade Prática 1, da matéria de Desenviolvimento Mobile. A proposta era uma aplicação com 4 abas em React Native, com navegação entre elas de alguma forma, Escolihu um catálogo de jogos, e selecionei alguns dos meus favoritos dentro dos gêneros de RPG, JRPG e RPG tático, aí ficou dividido em quatro abas com lista em grade, tela de detalhes e perfil com links. Foi a ideia que inspirou este portfólio: usar a estrutura de lista e exibição de cards e modais com detalhes sobre para apresentar projetos pessoais, e mantendo a temática de jogos, RPG e fantasia, que faz parte do que eu gosto",
+      "Aplicativo mobile com quatro abas e tema livre, construído como Atividade Prática 1, da matéria de Desenviolvimento Mobile. A proposta era uma aplicação com 4 abas em React Native, com navegação entre elas de alguma forma, Escolihu um catálogo de jogos, e selecionei alguns dos meus favoritos dentro dos gêneros de RPG, JRPG e RPG tático, aí ficou dividido em quatro abas com lista em grade, tela de detalhes e perfil com links. Foi a ideia que inspirou este portfólio: usar a estrutura de lista e exibição de cards e modais com detalhes sobre para apresentar projetos pessoais, e mantendo a temática de jogos, RPG e fantasia, que faz parte do que eu gosto. Não houve deploy.",
     stack: ["React Native", "Expo", "TypeScript", "React Navigation"],
     links: {
       github: "https://github.com/Gadelha1/AP1_RN",
+      snack: "https://snack.expo.dev/@gabrielgadelha/ap1"
     },
     capitulo: "5º Semestre - Desenvolvimento Mobile",
     dificuldade: 4,
@@ -53,9 +55,9 @@ export const projects: Project[] = [
   {
     slug: "loja-visgo-de-jaca",
     titulo: "Visgo de Jaca",
-    subtitulo: "Este projeto tem como objetivo desenvolver uma loja online que funcione tanto como uma vitrine para as artes da marca, quanto como uma plataforma de vendas direta ao consumidor. A Visgo de Jaca é uma marca nascida das raízes culturais da capoeira e da música, com ênfase na percussão. Fundada por Jaca, um ex-enfermeiro e artista autodidata, a marca destaca-se pela produção de estampas autorais que incorporam símbolos significativos da cultura sul-americana e da luta anticolonial.",
+    subtitulo: "Projeto Interdisciplinar",
     descricao:
-      "Projeto realizado como trabalho final da disciplina de Desenvolvimento Web, do 3º semestre do curso de Desenvolvimento de Software Multiplataforma. O objetivo era desenvolver uma loja online que funcione como uma vitrine para as artes da marca, exibir as estampas do cliente e chamar os compradores para as redes sociais da marca.",
+      "Projeto realizado como trabalho final da disciplina de Desenvolvimento Web, do 3º semestre do curso de Desenvolvimento de Software Multiplataforma. A ideia foi desenvolver um site que funcionasse como uma vitrine para as artes da marca, exibir as estampas do cliente e chamar os compradores para as redes sociais da marca. O projeto não teve deploy.",
     stack: ["JavaScript", "HTML", "Bootstrap CSS"],
     links: {
       github: "https://github.com/DSM2SEM2024/100esperanca",
@@ -76,26 +78,28 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: "exemplo-kotlin",
-    titulo: "App Kotlin (planejado)",
-    subtitulo: "Substitua por um projeto seu · placeholder",
+    slug: "Calculadora-React",
+    titulo: "Calculadora React",
+    subtitulo: "Atividade Prática · React Native",
     descricao:
-      "Outro projeto de exemplo. A dica: construa uma versão mobile nativa deste mesmo portfólio em Kotlin + Jetpack Compose durante o semestre. Você pratica a linguagem das aulas e ganha um case forte para entrevistas.",
-    stack: ["Kotlin", "Jetpack Compose"],
+      "Atividade prática desenvolvida no 5º semestre da disciplina de Desenvolvimento Mobile, com o objetivo de desenvolver uma calculadora para as operações básicas utilizando React. A calculadora foi construída com uma interface simples e intuitiva, permitindo aos usuários realizar cálculos de forma eficiente. O projeto também serviu como uma oportunidade para aplicar conceitos de React, como componentes, estado e eventos. O código é hospedado no Snack Expo, permitindo a execução do projeto diretamente no navegador para testes.",
+    stack: ["React", "Expo"],
     links: {
-      github: "https://github.com/Gadelha1",
+      snack: "https://snack.expo.dev/@gabrielgadelha/ap7",
     },
-    capitulo: "Semestre · Disciplina",
-    dificuldade: 4,
+    capitulo: "5º Semestre · Desenvolvimento Mobile",
+    dificuldade: 2,
     destaque: false,
     accent: "#ea580c",
     stats: [
-      { label: "Kotlin", value: 2 },
-      { label: "Jetpack Compose", value: 2 },
+      { label: "React", value: 4 },
+      { label: "Expo", value: 3 },
       { label: "UI & Tema", value: 3 },
     ],
     aprendizados: [
-      "Troque por aprendizados reais ao concluir o projeto",
+      "Desenvolvimento de componentes reutilizáveis em React;",
+      "Gerenciamento de estado e eventos em aplicações React;",
+      "Utilização do Snack Expo para hospedagem e testes de aplicações React Native;",
     ],
   },
-];
+]

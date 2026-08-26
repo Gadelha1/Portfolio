@@ -69,9 +69,21 @@ export function ProjectDetail({ project }: { project: Project }) {
               href={project.links.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-secondary"
+              className="btn-github"
             >
+              <img src="/icons/github.svg" alt="" />
               Código-fonte
+            </a>
+          )}
+          {project.links.snack && (
+            <a
+              href={project.links.snack}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-snack"
+            >
+              <img src="/icons/expo.svg" alt="" />
+              Snack Expo
             </a>
           )}
           {project.links.deploy && (

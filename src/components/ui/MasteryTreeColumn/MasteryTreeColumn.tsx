@@ -1,4 +1,4 @@
-import type { MasteryTree } from "@/data/profile";
+import type { MasteryTree } from "@/data/types";
 import { MasteryNode } from "../MasteryNode/MasteryNode";
 import "./css/MasteryTreeColumn.css";
 
