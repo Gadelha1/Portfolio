@@ -10,9 +10,89 @@
   padding-inline: 1rem;
 }
 
-.hero-item {
+/* ---------- Hero Card ---------- */
+
+.hero-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2.5rem 2rem;
+  border-radius: 1rem;
+  max-width: 24rem;
+  width: 100%;
   animation: rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) backwards;
 }
+
+/* ---------- Portrait ---------- */
+
+.hero-portrait {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portrait-frame {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 0.75rem;
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--color-night-800) 80%, transparent),
+    color-mix(in srgb, var(--color-night-900) 90%, transparent)
+  );
+  border: 2px solid color-mix(in srgb, var(--color-gold-500) 50%, transparent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    0 0 20px -4px color-mix(in srgb, var(--color-gold-500) 30%, transparent),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.portrait-initials {
+  font-family: var(--font-display);
+  font-size: 2.25rem;
+  font-weight: 700;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--color-gold-300),
+    var(--color-gold-500)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ---------- Hero Info ---------- */
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.hero-name {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-mist-100);
+}
+
+.hero-title {
+  font-size: 0.8rem;
+  color: var(--color-mist-500);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+/* ---------- Animations ---------- */
 
 @keyframes rise {
   from {
@@ -22,29 +102,6 @@
   to {
     opacity: 1;
     transform: none;
-  }
-}
-
-.hero-title {
-  font-family: var(--font-display);
-  font-size: 3rem;
-  font-weight: 900;
-  line-height: 1.1;
-  background-image: linear-gradient(
-    to bottom right,
-    var(--color-gold-300),
-    var(--color-gold-500),
-    var(--color-gold-600)
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  text-shadow: 0 0 24px color-mix(in srgb, var(--color-gold-500) 45%, transparent);
-}
-
-@media (min-width: 768px) {
-  .hero-title {
-    font-size: 4.5rem;
   }
 }
 

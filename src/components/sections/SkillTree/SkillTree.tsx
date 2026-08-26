@@ -7,9 +7,9 @@ export function SkillTree() {
   return (
     <section id="habilidades" className="section">
       <SectionHeading
-        eyebrow="Árvores de talento"
+        eyebrow="Árvore de talentos"
         title="Habilidades"
-        description="Pontos investidos em cada árvore ao longo da jornada. Build atual, sujeita a stack de cada semestre."
+        description="Pontos obtidos em cada tecnologia ao longo da jornada. Build sujeita a stack do semestre."
       />
 
       <div className="grid gap-12 px-4 sm:grid-cols-2 xl:grid-cols-4 xl:gap-8">

@@ -9,7 +9,7 @@ export function CharacterSheet() {
       <SectionHeading
         eyebrow="Ficha de personagem"
         title="Atributos"
-        description="Os atributos que distribuo entre meus projetos. Os pontos evoluem a cada semestre."
+        description="Essas são as tecnologias que pratiquei entre meus projetos. Cada atributo representa uma habilidade que desenvolvi ao longo do tempo, e cada nível indica o quanto me sinto confortável com a tecnologia."
       />
       <Reveal>
         <div className="panel mx-auto max-w-3xl rounded-xl p-6 md:p-8">

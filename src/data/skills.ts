@@ -17,7 +17,7 @@ export const attributes: Attribute[] = [
     id: "backend",
     label: "Back-end",
     value: 5,
-    description: "APIs simples e integrações",
+    description: "APIs simples e integrações, autenticação.",
   },
   {
     id: "database",
@@ -34,7 +34,7 @@ export const attributes: Attribute[] = [
   {
     id: "logica",
     label: "Lógica & Algoritmos",
-    value: 5,
+    value: 6,
     description: "Raciocínio e estruturação de soluções",
   },
 ];
@@ -74,7 +74,7 @@ export const masteryTrees: MasteryTree[] = [
         nodes: [
           {
             name: "TypeScript",
-            description: "Tipagem estática sobre JavaScript para código mais previsível.",
+            description: "Tipagem para código JavaScript",
             icon: ["/icons/typescript.svg"],
             rank: 2,
             maxRank: 4,

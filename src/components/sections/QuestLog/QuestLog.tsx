@@ -13,7 +13,7 @@ export function QuestLog() {
       <SectionHeading
         eyebrow="Livro de missões"
         title="Projetos"
-        description="Clique em uma quest para inspecionar o item e ver detalhes, atributos e aprendizados."
+        description="Clique em um card para inspecionar, ver detalhes, atributos e aprendizados."
       />
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
