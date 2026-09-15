@@ -1,13 +1,18 @@
 import type { Project } from "@/data/projects";
 import { AttributeBar } from "@/components/ui/AttributeBar/AttributeBar";
 import { Cover } from "@/components/ui/Cover/Cover";
+import { PrintGallery } from "@/components/ui/PrintGallery/PrintGallery";
 import { StarRating } from "@/components/ui/StarRating/StarRating";
 import "./css/ProjectDetail.css";
 
 export function ProjectDetail({ project }: { project: Project }) {
   return (
     <article>
-      <Cover accent={project.accent} titulo={project.titulo} imagem={project.imagem} />
+      <Cover
+        accent={project.accent}
+        titulo={project.titulo}
+        imagem={project.imagem}
+      />
       <div className="flex flex-col gap-8 p-6 md:p-8">
         <header className="flex flex-col gap-3">
           {project.destaque && (
@@ -51,11 +56,21 @@ export function ProjectDetail({ project }: { project: Project }) {
           </div>
         </section>
 
+        {project.prints && project.prints.length > 0 && (
+          <section>
+            <h2 className="section-subtitle">Prints do projeto</h2>
+            <PrintGallery prints={project.prints} />
+          </section>
+        )}
+
         <section>
           <h2 className="section-subtitle">Recompensa — aprendizados</h2>
           <ul className="space-y-2.5">
             {project.aprendizados.map((item) => (
-              <li key={item} className="flex gap-3 text-sm leading-6 text-mist-300">
+              <li
+                key={item}
+                className="flex gap-3 text-sm leading-6 text-mist-300"
+              >
                 <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gold-500" />
                 {item}
               </li>

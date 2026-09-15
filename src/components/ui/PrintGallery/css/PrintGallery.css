@@ -1,0 +1,24 @@
+/* ---------- Print do projeto ---------- */
+
+.print-card {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  border: 1px solid color-mix(in srgb, var(--color-night-700) 70%, transparent);
+  background: var(--color-night-900);
+}
+
+.print-card-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.print-card-caption {
+  padding: 0.6rem 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: var(--color-mist-400);
+  background: var(--color-night-950);
+}
