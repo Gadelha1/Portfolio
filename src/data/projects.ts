@@ -25,34 +25,6 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    slug: "ap1-games",
-    titulo: "Catálogo de Jogos",
-    subtitulo: "Atividade Prática · React Native",
-    descricao:
-      "Aplicativo mobile com quatro abas e tema livre, construído como Atividade Prática 1, da matéria de Desenviolvimento Mobile. A proposta era uma aplicação com 4 abas em React Native, com navegação entre elas de alguma forma, Escolihu um catálogo de jogos, e selecionei alguns dos meus favoritos dentro dos gêneros de RPG, JRPG e RPG tático, aí ficou dividido em quatro abas com lista em grade, tela de detalhes e perfil com links. Foi a ideia que inspirou este portfólio: usar a estrutura de lista e exibição de cards e modais com detalhes sobre para apresentar projetos pessoais, e mantendo a temática de jogos, RPG e fantasia, que faz parte do que eu gosto. Não houve deploy.",
-    stack: ["React Native", "Expo", "TypeScript", "React Navigation"],
-    links: {
-      github: "https://github.com/Gadelha1/AP1_RN",
-      snack: "https://snack.expo.dev/@gabrielgadelha/ap1"
-    },
-    capitulo: "5º Semestre - Desenvolvimento Mobile",
-    dificuldade: 4,
-    destaque: true,
-    accent: "#7c3aed",
-    stats: [
-      { label: "React Native", value: 4 },
-      { label: "Navegação", value: 3 },
-      { label: "UI & Tema", value: 5 },
-      { label: "Organização", value: 4 },
-    ],
-    aprendizados: [
-      "Navegação em abas e stack com React Navigation",
-      "Componentização de telas e dados em arquivos separados",
-      "Tema escuro por padrão de sistema",
-      "Estrutura de projeto escalável para pequenos apps",
-    ],
-  },
-  {
     slug: "loja-visgo-de-jaca",
     titulo: "Visgo de Jaca",
     subtitulo: "Projeto Interdisciplinar",
@@ -78,28 +50,29 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: "Calculadora-React",
-    titulo: "Calculadora React",
-    subtitulo: "Atividade Prática · React Native",
+    slug: "pilates-studio-system",
+    titulo: "Sistema Gerenciamento Estúdio de Pilates",
+    subtitulo: "Projeto Interdisciplinar · Banco de Dados Não Relacional",
     descricao:
-      "Atividade prática desenvolvida no 5º semestre da disciplina de Desenvolvimento Mobile, com o objetivo de desenvolver uma calculadora para as operações básicas utilizando React. A calculadora foi construída com uma interface simples e intuitiva, permitindo aos usuários realizar cálculos de forma eficiente. O projeto também serviu como uma oportunidade para aplicar conceitos de React, como componentes, estado e eventos. O código é hospedado no Snack Expo, permitindo a execução do projeto diretamente no navegador para testes.",
-    stack: ["React", "Expo"],
+      "Projeto Interdisciplinar do 3º semestre, realizado para a disciplina de Banco de Dados Não Relacional. É uma aplicação de gerenciamento de estúdio de pilates com login, gerenciamento de usuários (perfis de admin, instrutor e recepcionista), controle de aulas e planos. O backend foi construído em Java com Spring Boot, integrado com o MongoDB — banco de dados não relacional — que sobe facilmente via Docker com docker-compose. Trabalhei no front-end em JavaScript/HTML/CSS, consumindo a API do Java. O projeto não teve deploy.",
+    stack: ["Java", "Spring Boot", "MongoDB", "Docker", "JavaScript"],
     links: {
-      snack: "https://snack.expo.dev/@gabrielgadelha/ap7",
+      github: "https://github.com/Gadelha1/Pilates",
     },
-    capitulo: "5º Semestre · Desenvolvimento Mobile",
-    dificuldade: 2,
+    capitulo: "3º Semestre · Banco de Dados Não Relacionais",
+    dificuldade: 4,
     destaque: false,
-    accent: "#ea580c",
+    accent: "#2f9e44",
     stats: [
-      { label: "React", value: 4 },
-      { label: "Expo", value: 3 },
-      { label: "UI & Tema", value: 3 },
+      { label: "Java & Spring Boot", value: 2 },
+      { label: "Front-end (JS)", value: 5 },
+      { label: "Banco de Dados (MongoDB)", value: 2 },
+      { label: "Docker", value: 3 },
     ],
     aprendizados: [
-      "Desenvolvimento de componentes reutilizáveis em React;",
-      "Gerenciamento de estado e eventos em aplicações React;",
-      "Utilização do Snack Expo para hospedagem e testes de aplicações React Native;",
+      "Conceitos de banco de dados não relacional com MongoDB",
+      "Integração com o backend em Java/Spring Boot",
+      "Camada de autenticação com perfis de usuário",
     ],
   },
   {
@@ -156,29 +129,56 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: "pilates-studio-system",
-    titulo: "Sistema Gerenciamento Estúdio de Pilates",
-    subtitulo: "Projeto Interdisciplinar · Banco de Dados Não Relacional",
+    slug: "ap1-games",
+    titulo: "Catálogo de Jogos",
+    subtitulo: "Atividade Prática · React Native",
     descricao:
-      "Projeto Interdisciplinar do 3º semestre, realizado para a disciplina de Banco de Dados Não Relacional. É uma aplicação de gerenciamento de estúdio de pilates com login, gerenciamento de usuários (perfis de admin, instrutor e recepcionista), controle de aulas e planos. O backend foi construído em Java com Spring Boot, integrado com o MongoDB — banco de dados não relacional — que sobe facilmente via Docker com docker-compose. Trabalhei no front-end em JavaScript/HTML/CSS, consumindo a API do Java. O projeto não teve deploy.",
-    stack: ["Java", "Spring Boot", "MongoDB", "Docker", "JavaScript"],
+      "Aplicativo mobile com quatro abas e tema livre, construído como Atividade Prática 1, da matéria de Desenviolvimento Mobile. A proposta era uma aplicação com 4 abas em React Native, com navegação entre elas de alguma forma, Escolihu um catálogo de jogos, e selecionei alguns dos meus favoritos dentro dos gêneros de RPG, JRPG e RPG tático, aí ficou dividido em quatro abas com lista em grade, tela de detalhes e perfil com links. Foi a ideia que inspirou este portfólio: usar a estrutura de lista e exibição de cards e modais com detalhes sobre para apresentar projetos pessoais, e mantendo a temática de jogos, RPG e fantasia, que faz parte do que eu gosto. Não houve deploy.",
+    stack: ["React Native", "Expo", "TypeScript", "React Navigation"],
     links: {
-      github: "https://github.com/Gadelha1/Pilates",
+      github: "https://github.com/Gadelha1/AP1_RN",
+      snack: "https://snack.expo.dev/@gabrielgadelha/ap1"
     },
-    capitulo: "3º Semestre · Banco de Dados Não Relacionais",
+    capitulo: "5º Semestre - Desenvolvimento Mobile",
     dificuldade: 4,
-    destaque: false,
-    accent: "#2f9e44",
+    destaque: true,
+    accent: "#7c3aed",
     stats: [
-      { label: "Java & Spring Boot", value: 2 },
-      { label: "Front-end (JS)", value: 5 },
-      { label: "Banco de Dados (MongoDB)", value: 2 },
-      { label: "Docker", value: 3 },
+      { label: "React Native", value: 4 },
+      { label: "Navegação", value: 3 },
+      { label: "UI & Tema", value: 5 },
+      { label: "Organização", value: 4 },
     ],
     aprendizados: [
-      "Conceitos de banco de dados não relacional com MongoDB",
-      "Integração com o backend em Java/Spring Boot",
-      "Camada de autenticação com perfis de usuário",
+      "Navegação em abas e stack com React Navigation",
+      "Componentização de telas e dados em arquivos separados",
+      "Tema escuro por padrão de sistema",
+      "Estrutura de projeto escalável para pequenos apps",
+    ],
+  },
+  {
+    slug: "Calculadora-React",
+    titulo: "Calculadora React",
+    subtitulo: "Atividade Prática · React Native",
+    descricao:
+      "Atividade prática desenvolvida no 5º semestre da disciplina de Desenvolvimento Mobile, com o objetivo de desenvolver uma calculadora para as operações básicas utilizando React. A calculadora foi construída com uma interface simples e intuitiva, permitindo aos usuários realizar cálculos de forma eficiente. O projeto também serviu como uma oportunidade para aplicar conceitos de React, como componentes, estado e eventos. O código é hospedado no Snack Expo, permitindo a execução do projeto diretamente no navegador para testes.",
+    stack: ["React", "Expo"],
+    links: {
+      snack: "https://snack.expo.dev/@gabrielgadelha/ap7",
+    },
+    capitulo: "5º Semestre · Desenvolvimento Mobile",
+    dificuldade: 2,
+    destaque: false,
+    accent: "#ea580c",
+    stats: [
+      { label: "React", value: 4 },
+      { label: "Expo", value: 3 },
+      { label: "UI & Tema", value: 3 },
+    ],
+    aprendizados: [
+      "Desenvolvimento de componentes reutilizáveis em React;",
+      "Gerenciamento de estado e eventos em aplicações React;",
+      "Utilização do Snack Expo para hospedagem e testes de aplicações React Native;",
     ],
   }
 ]
