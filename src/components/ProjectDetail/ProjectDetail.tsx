@@ -32,6 +32,11 @@ export function ProjectDetail({ project }: { project: Project }) {
         </header>
 
         <section>
+          <h2 className="section-subtitle">Descrição</h2>
+          <p className="leading-7 text-mist-300">{project.descricao}</p>
+        </section>
+
+        <section>
           <h2 className="section-subtitle">Atributos da quest</h2>
           <div className="grid gap-5 sm:grid-cols-2">
             {project.stats.map((stat) => (
