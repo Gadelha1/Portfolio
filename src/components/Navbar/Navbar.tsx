@@ -30,7 +30,7 @@ export function Navbar() {
 
   return (
     <header className="navbar">
-      <nav className="navbar-inner">
+      <nav className="navbar-inner" aria-label="Navegação principal">
         {links.map((link) => (
           <a key={link.href} href={link.href} className="nav-link">
             {link.label}

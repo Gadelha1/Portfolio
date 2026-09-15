@@ -13,7 +13,7 @@ export function MasteryTreeColumn({ tree }: MasteryTreeColumnProps) {
   );
 
   return (
-    <div className="mastery-tree">
+    <div className="mastery-tree" role="group" aria-label={tree.label}>
       <header className="mastery-header">
         <h3 className="mastery-title">{tree.label}</h3>
         <span className="mastery-points">

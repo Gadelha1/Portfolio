@@ -13,9 +13,9 @@ export function ProjectDetail({ project }: { project: Project }) {
           {project.destaque && (
             <span className="badge-destaque w-fit">Quest em destaque</span>
           )}
-          <h1 className="font-display text-2xl font-bold text-mist-100 md:text-3xl">
+          <h2 className="font-display text-2xl font-bold text-mist-100 md:text-3xl">
             {project.titulo}
-          </h1>
+          </h2>
           <p className="text-mist-400">{project.subtitulo}</p>
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-mist-500">
             <span>{project.capitulo}</span>
@@ -73,6 +73,7 @@ export function ProjectDetail({ project }: { project: Project }) {
             >
               <img src="/icons/github.svg" alt="" />
               Código-fonte
+              <span className="sr-only">(abre em nova aba)</span>
             </a>
           )}
           {project.links.snack && (
@@ -84,6 +85,7 @@ export function ProjectDetail({ project }: { project: Project }) {
             >
               <img src="/icons/expo.svg" alt="" />
               Snack Expo
+              <span className="sr-only">(abre em nova aba)</span>
             </a>
           )}
           {project.links.deploy && (
@@ -94,6 +96,7 @@ export function ProjectDetail({ project }: { project: Project }) {
               className="btn-arcane"
             >
               Ver online
+              <span className="sr-only">(abre em nova aba)</span>
             </a>
           )}
         </div>

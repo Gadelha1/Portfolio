@@ -28,7 +28,7 @@ export const attributes: Attribute[] = [
   {
     id: "uiux",
     label: "UI & UX",
-    value: 7,
+    value: 8,
     description: "Composição, tema, consistência visual",
   },
   {

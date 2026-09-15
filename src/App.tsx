@@ -11,8 +11,11 @@ export default function App() {
   return (
     <>
       <Background />
+      <a href="#conteudo" className="skip-link">
+        Pular para o conteúdo
+      </a>
       <Navbar />
-      <main className="flex-1">
+      <main id="conteudo" className="flex-1">
         <Hero />
         <CharacterSheet />
         <SkillTree />

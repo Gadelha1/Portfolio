@@ -63,6 +63,9 @@ export function Contact() {
               >
                 {rede.icone}
                 {rede.nome}
+                {!rede.url.startsWith("mailto:") && (
+                  <span className="sr-only">(abre em nova aba)</span>
+                )}
               </a>
             ))}
           </div>

@@ -23,6 +23,7 @@ export function QuestCard({ project, index, onOpen }: QuestCardProps) {
         type="button"
         onClick={() => onOpen(project)}
         className={`quest-card ${project.destaque ? "panel-gold" : "panel"}`}
+        aria-label={`Ver detalhes de ${project.titulo}`}
       >
         <Cover accent={project.accent} titulo={project.titulo} imagem={project.imagem} />
         <div className="flex flex-col gap-3 p-5">

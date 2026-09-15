@@ -44,6 +44,7 @@ export function MasteryNode({ node }: MasteryNodeProps) {
         onBlur={() => setHovered(false)}
         onClick={() => setPinned((v) => !v)}
         aria-expanded={aberto}
+        aria-describedby={`tooltip-${node.name}`}
         aria-label={`${node.name} — ${node.rank} de ${node.maxRank}${
           node.status ? ", aprendendo" : ""
         }`}
@@ -63,7 +64,7 @@ export function MasteryNode({ node }: MasteryNodeProps) {
       </button>
 
       {aberto && (
-        <div className="tooltip" role="tooltip">
+        <div className="tooltip" role="tooltip" id={`tooltip-${node.name}`}>
           <p className="tooltip-name">{node.name}</p>
           <p className="tooltip-rank">
             Rank {node.rank}/{node.maxRank}

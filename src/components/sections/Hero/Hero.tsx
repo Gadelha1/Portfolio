@@ -10,7 +10,7 @@ export function Hero() {
       <div className="hero-card panel-gold" style={d(0)}>
         <div className="hero-portrait">
           <div className="portrait-frame">
-            <span className="portrait-initials">GG</span>
+            <img src="/avatar/IMG_20260623_160438.jpg" alt="Gabriel Alves Gadelha" className="portrait-img" />
           </div>
         </div>
 
@@ -37,10 +37,10 @@ export function Hero() {
           </div>
 
           <div className="hero-actions">
-            <a href="#quests" className="btn-primary">
+            <a href="#quests" className="btn-primary" aria-label="Ver projetos">
               Ver missões
             </a>
-            <a href="#atributos" className="btn-secondary">
+            <a href="#atributos" className="btn-secondary" aria-label="Ver atributos">
               A ficha
             </a>
           </div>
