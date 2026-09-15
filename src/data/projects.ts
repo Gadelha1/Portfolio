@@ -63,7 +63,7 @@ export const projects: Project[] = [
       github: "https://github.com/DSM2SEM2024/100esperanca",
     },
     capitulo: "3º Semestre · Desenvolvimento Web",
-    dificuldade: 2,
+    dificuldade: 3,
     destaque: false,
     accent: "#b8860b",
     imagem: "/covers/visgo.jpg",
@@ -102,4 +102,83 @@ export const projects: Project[] = [
       "Utilização do Snack Expo para hospedagem e testes de aplicações React Native;",
     ],
   },
+  {
+    slug: "P2-React-Native",
+    titulo: "Prova 2 React Native",
+    subtitulo: "Prova 2 · React Native",
+    descricao:
+      "P2 desenvolvida no 4º semestre para disciplina de Desenvolvimento Mobile, a ideia por trás da prova era reunir múltiplas aplicações React Native desenvolvidas ao longo do semestre em um único projeto. Ela conta com uma home que reúne: uma aplicação geradora de frases 'aleatórias', uma calculadora de IMC, e uma lista de tarefas. Além de uma tela de login + cadastro de usuário",
+    stack: ["React", "Expo"],
+    links: {
+      github: "https://github.com/Gadelha1/Mobile-P2/tree/main/P2%20-%20Mobile",
+    },
+    capitulo: "4º Semestre · Desenvolvimento Mobile",
+    dificuldade: 3,
+    destaque: false,
+    accent: "#2052a3",
+    stats: [
+      { label: "React", value: 4 },
+      { label: "UI & Tema", value: 3 },
+      { label: "Organização de Código", value: 3 },
+    ],
+    aprendizados: [
+      "Junção de diversas aplicações desenvolvidas em React em uma só;",
+      "Multiaplicações com diferentes requisitos;",
+    ],
+  },
+  {
+    slug: "Site Serviçoes AWS",
+    titulo: "Página sobre Serviços AWS",
+    subtitulo: "Atividade Prática · Cloud Computing",
+    descricao:
+      "O repositório é um fork de um projeto desenvolvido para hospedar páginas de diversos alunos, que exploram e explicam alguns dos serviços da Amazon Web Services (AWS). Foram escolhidas páginas templates desenvolvidas com tailwindcss e cada aluno criou e hospedou uma página HTML, com alguns serviços AWS selecionados entre os que o professor estabeleceu. A minha página está em trabalhos/gabrielG.html, e contém 9 serviços, entre eles: Lambda, S3, CloudFront, EC2, VPC, RDS, IAM, Route 53, Cloud Watch.",
+    stack: ["HTML", "CSS", "JavaScript", "TailwindCSS"],
+    links: {
+      github: "https://github.com/Gadelha1/site_cloud_computing/tree/main",
+    },
+    capitulo: "4º Semestre · Computação em Nuvem I",
+    dificuldade: 2,
+    destaque: false,
+    accent: "#b8860b",
+
+    stats: [
+      { label: "Front-end", value: 5 },
+      { label: "HTML", value: 5 },
+      { label: "CSS", value: 5 },
+      { label: "JavaScript", value: 2 },
+      { label: "TailwindCSS", value: 2 },
+    ],
+    aprendizados: [
+      "Utilização de Templates TailwindCSS;",
+      "Definições e Usos de Serviços AWS;",
+      "Javascript simples para efeito de scroll e gradiente",
+      "Introdução à hospedagem de páginas estáticas simples em S3",
+    ],
+  },
+  {
+    slug: "pilates-studio-system",
+    titulo: "Sistema Gerenciamento Estúdio de Pilates",
+    subtitulo: "Projeto Interdisciplinar · Banco de Dados Não Relacional",
+    descricao:
+      "Projeto Interdisciplinar do 3º semestre, realizado para a disciplina de Banco de Dados Não Relacional. É uma aplicação de gerenciamento de estúdio de pilates com login, gerenciamento de usuários (perfis de admin, instrutor e recepcionista), controle de aulas e planos. O backend foi construído em Java com Spring Boot, integrado com o MongoDB — banco de dados não relacional — que sobe facilmente via Docker com docker-compose. Trabalhei no front-end em JavaScript/HTML/CSS, consumindo a API do Java. O projeto não teve deploy.",
+    stack: ["Java", "Spring Boot", "MongoDB", "Docker", "JavaScript"],
+    links: {
+      github: "https://github.com/Gadelha1/Pilates",
+    },
+    capitulo: "3º Semestre · Banco de Dados Não Relacionais",
+    dificuldade: 4,
+    destaque: false,
+    accent: "#2f9e44",
+    stats: [
+      { label: "Java & Spring Boot", value: 2 },
+      { label: "Front-end (JS)", value: 5 },
+      { label: "Banco de Dados (MongoDB)", value: 2 },
+      { label: "Docker", value: 3 },
+    ],
+    aprendizados: [
+      "Conceitos de banco de dados não relacional com MongoDB",
+      "Integração com o backend em Java/Spring Boot",
+      "Camada de autenticação com perfis de usuário",
+    ],
+  }
 ]
