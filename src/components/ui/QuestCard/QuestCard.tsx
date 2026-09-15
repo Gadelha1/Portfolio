@@ -26,8 +26,7 @@ export function QuestCard({ project, index, onOpen }: QuestCardProps) {
         aria-label={`Ver detalhes de ${project.titulo}`}
       >
         <Cover accent={project.accent} titulo={project.titulo} imagem={project.imagem} />
-        <div className="card-shade" aria-hidden />
-        <div className="flex flex-col gap-3 p-5">
+        <div className="flex flex-1 flex-col gap-3 p-5">
           <div className="flex items-start justify-between gap-3">
             <h3 className="quest-card-title">{project.titulo}</h3>
             {project.destaque && (
