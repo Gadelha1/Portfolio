@@ -25,6 +25,26 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    slug: "pagina-semantica-html",
+    titulo: "Página HTML Semântica",
+    subtitulo: "Prova 1 · Desenvolvimento Web I",
+    descricao:
+      "P1 desenvolvida no 1º semestre para a disciplina de Desenvolvimento Web I. A proposta era descrever o conceito de HTML semântico e construir uma página estática que aplicasse essa marcação na prática, com elementos como header, nav, main, section e footer. Foi meu primeiro contato com HTML puro e com a estruturação semântica do conteúdo de páginas web.",
+    stack: ["HTML"],
+    links: {
+      github: "https://github.com/Gadelha1/Index---Desenvolvimento-Web-1",
+    },
+    capitulo: "1º Semestre · Desenvolvimento Web",
+    dificuldade: 1,
+    destaque: false,
+    accent: "#e8590c",
+    stats: [{ label: "HTML", value: 4 }],
+    aprendizados: [
+      "Conceito e boas práticas de HTML semântico;",
+      "Estruturação de uma página estática apenas com HTML;",
+    ],
+  },
+  {
     slug: "loja-visgo-de-jaca",
     titulo: "Visgo de Jaca",
     subtitulo: "Projeto Interdisciplinar",
@@ -137,7 +157,7 @@ export const projects: Project[] = [
     stack: ["React Native", "Expo", "TypeScript", "React Navigation"],
     links: {
       github: "https://github.com/Gadelha1/AP1_RN",
-      snack: "https://snack.expo.dev/@gabrielgadelha/ap1"
+      snack: "https://snack.expo.dev/@gabrielgadelha/ap1",
     },
     capitulo: "5º Semestre - Desenvolvimento Mobile",
     dificuldade: 4,
@@ -180,5 +200,5 @@ export const projects: Project[] = [
       "Gerenciamento de estado e eventos em aplicações React;",
       "Utilização do Snack Expo para hospedagem e testes de aplicações React Native;",
     ],
-  }
-]
+  },
+];
