@@ -10,7 +10,7 @@ export function Hero() {
       <div className="hero-card panel-gold" style={d(0)}>
         <div className="hero-portrait">
           <div className="portrait-frame">
-            <img src="/avatar/IMG_20260623_160438.jpg" alt="Gabriel Alves Gadelha" className="portrait-img" />
+            <img src="/avatar/avatar.jpg" alt="Gabriel Alves Gadelha" className="portrait-img" />
           </div>
         </div>
 
