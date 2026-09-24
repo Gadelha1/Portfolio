@@ -1,22 +1,22 @@
-import { paginaSemanticaHtml } from "./pagina-semantica-html";
 import { safeEcoTour } from "./safe-eco-tour";
 import { lojaVisgoDeJaca } from "./loja-visgo-de-jaca";
 import { pilatesStudioSystem } from "./pilates-studio-system";
 import { p2ReactNative } from "./p2-react-native";
-import { siteServicosAws } from "./site-servicos-aws";
+import { frontendLeads } from "./frontend-leads";
 import { ap1Games } from "./ap1-games";
-import { calculadoraReact } from "./calculadora-react";
+import { mobileLeads } from "./mobile-leads";
+import { mobileLeadsV2 } from "./mobile-leads-v2";
 import type { Project } from "./type";
 
 export const projects: Project[] = [
-  paginaSemanticaHtml,
   safeEcoTour,
   lojaVisgoDeJaca,
   pilatesStudioSystem,
   p2ReactNative,
-  siteServicosAws,
+  frontendLeads,
   ap1Games,
-  calculadoraReact,
+  mobileLeads,
+  mobileLeadsV2,
 ];
 
 export type { Project, ProjectStat, Print } from "./type";

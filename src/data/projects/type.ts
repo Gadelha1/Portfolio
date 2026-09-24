@@ -16,6 +16,7 @@ export interface Project {
   stack: string[];
   links: {
     github?: string;
+    backend?: string;
     snack?: string;
     deploy?: string;
   };

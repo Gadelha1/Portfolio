@@ -3,15 +3,15 @@ import type { Project } from "./type";
 export const lojaVisgoDeJaca: Project = {
   slug: "loja-visgo-de-jaca",
   titulo: "Visgo de Jaca",
-  subtitulo: "Projeto Interdisciplinar",
+  subtitulo: "Projeto Interdisciplinar - 2º Semestre",
   descricao:
-    "Projeto realizado como trabalho final da disciplina de Desenvolvimento Web, do 3º semestre do curso de Desenvolvimento de Software Multiplataforma. A ideia foi desenvolver um site que funcionasse como uma vitrine para as artes da marca, exibir as estampas do cliente e chamar os compradores para as redes sociais da marca. Como o cliente trabalhava sozinho, ele faria a gestão do cadastro de produtos, e, caso futuramente precisasse de ajuda, para usuários também.",
+    "Projeto realizado como trabalho final da disciplina de Desenvolvimento Web, do 2º semestre do curso de Desenvolvimento de Software Multiplataforma. A ideia foi desenvolver um site que funcionasse como uma vitrine para as artes da marca, exibir as estampas do cliente e chamar os compradores para as redes sociais da marca. Como o cliente trabalhava sozinho, ele faria a gestão do cadastro de produtos, e, caso futuramente precisasse de ajuda, para usuários também.",
   stack: ["HTML", "Bootstrap CSS", "JavaScript"],
   links: {
     github: "https://github.com/DSM2SEM2024/100esperanca",
     deploy: "https://dsm2sem2024.github.io/100esperanca/",
   },
-  capitulo: "3º Semestre · Desenvolvimento Web",
+  capitulo: "2º Semestre · Desenvolvimento Web",
   dificuldade: 3,
   destaque: false,
   accent: "#b8860b",
