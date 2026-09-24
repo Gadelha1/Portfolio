@@ -5,7 +5,7 @@ export const safeEcoTour: Project = {
   titulo: "SafeEcoTour",
   subtitulo: "Projeto Interdisciplinar · 1º Semestre",
   descricao:
-    "Projeto Interdisciplinar do 1º semestre, desenvolvido em equipe, com a proposta de construir um site de turismo ecológico apresentando pontos turísticos de Bertioga. A página é 100% estática, composta por HTML, CSS e JavaScript, com páginas individuais para cada destino que incluem textos, imagens e mapas, além de menus responsivos e carrossel de fotos. Trabalhei no desenvolvimento das páginas com HTML semântico. O site possui páginas como Cachoeira do Elefante, Cachoeira do Guaratuba, Mirante Itaguaçu, Rio Jaguareguava, Torre 47, Trilha d'Água e Vale Verde. O projeto foi publicado no GitHub Pages e ficou no ar durante o período da disciplina.",
+    "Projeto Interdisciplinar do 1º semestre, desenvolvido em equipe, com a proposta de construir um site de turismo ecológico apresentando pontos turísticos de Bertioga. A página é 100% estática, composta por HTML, CSS e JavaScript, com páginas individuais para cada destino que incluem textos, imagens e mapas, além de menus responsivos e carrossel de fotos. Trabalhei no desenvolvimento das páginas com HTML semântico. O projeto foi publicado no GitHub Pages.",
   stack: ["HTML", "CSS", "JavaScript"],
   links: {
     github: "https://github.com/LunaLeao/PI1SemestreSafeEcoTour/tree/Gabriel",
@@ -23,7 +23,7 @@ export const safeEcoTour: Project = {
   aprendizados: [
     "HTML semântico na estruturação de páginas multi-destino;",
     "Layouts responsivos com Flexbox;",
-    "Interação com o usuário manipulando o DOM em JavaScript;",
+    "Leve contato com manipulação do DOM em JavaScript;",
     "Trabalho em equipe em um repositório compartilhado, com branch própria;",
   ],
   prints: [
