@@ -96,6 +96,18 @@ export function ProjectDetail({ project }: { project: Project }) {
               <span className="sr-only">(abre em nova aba)</span>
             </a>
           )}
+          {project.links.backend && (
+            <a
+              href={project.links.backend}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-github"
+            >
+              <img src="/icons/github.svg" alt="" />
+              Back-end
+              <span className="sr-only">(abre em nova aba)</span>
+            </a>
+          )}
           {project.links.snack && (
             <a
               href={project.links.snack}
