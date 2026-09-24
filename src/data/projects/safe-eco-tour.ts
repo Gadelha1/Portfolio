@@ -28,16 +28,12 @@ export const safeEcoTour: Project = {
   ],
   prints: [
     {
-      src: "/prints/safe-eco-tour/home.jpg",
+      src: "/prints/safe-eco-tour/home_safeecotour.png",
       legenda: "Home do site de turismo",
     },
     {
-      src: "/prints/safe-eco-tour/destino.jpg",
-      legenda: "Página de ponto turístico",
-    },
-    {
-      src: "/prints/safe-eco-tour/menu-mobile.jpg",
-      legenda: "Menu lateral responsivo",
+      src: "/prints/safe-eco-tour/sider_safeecotour.png",
+      legenda: "Menu lateral aberto",
     },
   ],
 };

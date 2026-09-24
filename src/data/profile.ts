@@ -8,7 +8,7 @@ export const profile = {
   nivel: 25,
   cita: "\u201cSo much shadow around us. To think I almost missed the light.\u201d \u2014 Wyll Ravengard (BG3)",
   sobre:
-    "Estudante de Desenvolvimento de Software Multiplataforma, buscando entrar na área de tecnologia. Já realizei estágio interno na FATEC Itaquera, trabalhando com Wordpress para manutenção do site da unidade. A ideia do portfólio é exibir as informações como se fosse minha ficha de personagem de RPG — atributos, habilidades, projetos como quests. Gosto bastante de fantasia, jogos, e isso se mistura no genero de RPG, e quis trazer um pouco disso num projeto que contém coisas sobre mim.",
+    "Estudante de Desenvolvimento de Software Multiplataforma, buscando entrar na área de tecnologia, tendo mais identificação com o Frontend. Já realizei estágio interno na FATEC Itaquera, trabalhando com Wordpress para manutenção do site da unidade. A ideia do portfólio é exibir as informações como se fosse minha ficha de personagem de RPG — atributos, habilidades, projetos como quests. Gosto bastante de fantasia, jogos, e isso se mistura no genero de RPG, que é meu favorito, então quis trazer um pouco disso num projeto que contém coisas sobre mim.",
   links: {
     github: "https://github.com/Gadelha1",
     linkedin: "https://www.linkedin.com/in/gabrielgadelha1",
