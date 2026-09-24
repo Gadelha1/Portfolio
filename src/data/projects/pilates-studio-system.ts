@@ -8,7 +8,7 @@ export const pilatesStudioSystem: Project = {
     "Projeto Interdisciplinar do 3º semestre, realizado para a disciplina de Banco de Dados Não Relacional. É uma aplicação de gerenciamento de estúdio de pilates com login, gerenciamento de usuários (perfis de admin, instrutor e recepcionista), controle de aulas e planos. O backend foi construído em Java com Spring Boot, integrado com o MongoDB — banco de dados não relacional — que sobe facilmente via Docker com docker-compose. Trabalhei no front-end em JavaScript/HTML/CSS, consumindo a API do Java. O projeto não teve deploy.",
   stack: ["Java", "Spring Boot", "MongoDB", "Docker", "JavaScript"],
   links: {
-    github: "https://github.com/Gadelha1/Pilates",
+    github: "https://github.com/lucasfnCode/App-for-Studio-the-pilates-PI---FATEC",
   },
   capitulo: "3º Semestre · Banco de Dados Não Relacionais",
   dificuldade: 4,
@@ -27,16 +27,16 @@ export const pilatesStudioSystem: Project = {
   ],
   prints: [
     {
-      src: "/prints/pilates-studio-system/login.jpg",
-      legenda: "Tela de login",
+      src: "/prints/pilates-studio-system/login_pilates.png",
+      legenda: "Tela de login do sistema",
     },
     {
-      src: "/prints/pilates-studio-system/dashboard.jpg",
-      legenda: "Painel de gerenciamento",
+      src: "/prints/pilates-studio-system/home_pilates.png",
+      legenda: "Home do sistema",
     },
     {
-      src: "/prints/pilates-studio-system/aulas.jpg",
-      legenda: "Controle de aulas e planos",
+      src: "/prints/pilates-studio-system/planos_pilates.png",
+      legenda: "Modal de planos",
     },
   ],
 };
