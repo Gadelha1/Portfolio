@@ -37,11 +37,11 @@ export function Hero() {
           </div>
 
           <div className="hero-actions">
-            <a href="#quests" className="btn-primary" aria-label="Ver projetos">
-              Ver missões
-            </a>
-            <a href="#atributos" className="btn-secondary" aria-label="Ver atributos">
+            <a href="#atributos" className="btn-primary" aria-label="Ver atributos">
               A ficha
+            </a>
+            <a href="#quests" className="btn-secondary" aria-label="Ver projetos">
+              Ver missões
             </a>
           </div>
         </div>
