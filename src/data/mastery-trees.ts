@@ -11,7 +11,7 @@ export const masteryTrees: MasteryTree[] = [
           {
             name: "JavaScript",
             description: "A linguagem da web: DOM, eventos e lógica no lado do cliente.",
-            icon: ["/icons/javascript.svg"],
+            icon: [`${import.meta.env.BASE_URL}icons/javascript.svg`],
             rank: 3,
             maxRank: 4,
           },
@@ -36,7 +36,7 @@ export const masteryTrees: MasteryTree[] = [
           {
             name: "TypeScript",
             description: "Tipagem para código JavaScript",
-            icon: ["/icons/typescript.svg"],
+            icon: [`${import.meta.env.BASE_URL}icons/typescript.svg`],
             rank: 2,
             maxRank: 4,
             status: "aprendendo",
@@ -55,7 +55,7 @@ export const masteryTrees: MasteryTree[] = [
           {
             name: "React Native",
             description: "Apps nativos para iOS e Android com componentes React.",
-            icon: ["/icons/react-native.svg"],
+            icon: [`${import.meta.env.BASE_URL}icons/react-native.svg`],
             rank: 4,
             maxRank: 4,
           },
@@ -67,7 +67,7 @@ export const masteryTrees: MasteryTree[] = [
           {
             name: "Expo",
             description: "Toolchain para criar, testar e distribuir apps React Native.",
-            icon: ["/icons/expo.svg"],
+            icon: [`${import.meta.env.BASE_URL}icons/expo.svg`],
             rank: 3,
             maxRank: 4,
           },
@@ -91,7 +91,7 @@ export const masteryTrees: MasteryTree[] = [
           {
             name: "HTML & CSS",
             description: "Estrutura semântica e estilização: a fundação das interfaces.",
-            icon: ["/icons/html5.svg", "/icons/css3.svg"],
+            icon: [`${import.meta.env.BASE_URL}icons/html5.svg`, `${import.meta.env.BASE_URL}icons/css3.svg`],
             rank: 4,
             maxRank: 4,
           },
@@ -103,14 +103,14 @@ export const masteryTrees: MasteryTree[] = [
           {
             name: "React",
             description: "Componentes, hooks e composição de interfaces reativas.",
-            icon: ["/icons/react.svg"],
+            icon: [`${import.meta.env.BASE_URL}icons/react.svg`],
             rank: 4,
             maxRank: 4,
           },
           {
             name: "Bootstrap",
             description: "Grid e utilitários prontos para prototipagem rápida.",
-            icon: ["/icons/bootstrap.svg"],
+            icon: [`${import.meta.env.BASE_URL}icons/bootstrap.svg`],
             rank: 3,
             maxRank: 4,
           },
@@ -122,7 +122,7 @@ export const masteryTrees: MasteryTree[] = [
           {
             name: "Tailwind CSS",
             description: "Estilização utilitária direto no markup — usada neste portfólio.",
-            icon: ["/icons/tailwindcss.svg"],
+            icon: [`${import.meta.env.BASE_URL}icons/tailwindcss.svg`],
             rank: 2,
             maxRank: 4,
             status: "aprendendo",
@@ -141,14 +141,14 @@ export const masteryTrees: MasteryTree[] = [
           {
             name: "Git & GitHub",
             description: "Versionamento, branches e colaboração em projetos.",
-            icon: ["/icons/git.svg"],
+            icon: [`${import.meta.env.BASE_URL}icons/git.svg`],
             rank: 4,
             maxRank: 4,
           },
           {
             name: "Figma",
             description: "Leitura de layouts e prototipação antes do código.",
-            icon: ["/icons/figma.svg"],
+            icon: [`${import.meta.env.BASE_URL}icons/figma.svg`],
             rank: 2,
             maxRank: 4,
           },
@@ -160,7 +160,7 @@ export const masteryTrees: MasteryTree[] = [
           {
             name: "VS Code",
             description: "Editor do dia a dia: atalhos, extensões e depuração.",
-            icon: ["/icons/vscode.svg"],
+            icon: [`${import.meta.env.BASE_URL}icons/vscode.svg`],
             rank: 4,
             maxRank: 4,
             capstone: true,
@@ -168,7 +168,7 @@ export const masteryTrees: MasteryTree[] = [
           {
             name: "WordPress",
             description: "CMS para criação e gerenciamento de sites e blogs.",
-            icon: ["/icons/wordpress.svg"],
+            icon: [`${import.meta.env.BASE_URL}icons/wordpress.svg`],
             rank: 3,
             maxRank: 4,
           },

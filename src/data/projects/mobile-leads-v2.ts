@@ -27,11 +27,11 @@ export const mobileLeadsV2: Project = {
   ],
   prints: [
     {
-      src: "/prints/mobile-leads-v2/home.png",
+      src: `${import.meta.env.BASE_URL}prints/mobile-leads-v2/home.png`,
       legenda: "Home do aplicativo",
     },
     {
-      src: "/prints/mobile-leads-v2/lead.png",
+      src: `${import.meta.env.BASE_URL}prints/mobile-leads-v2/lead.png`,
       legenda: "Detalhe do lead",
     },
   ],

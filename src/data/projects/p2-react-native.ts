@@ -12,7 +12,7 @@ export const p2ReactNative: Project = {
   },
   capitulo: "4º Semestre · Desenvolvimento Mobile",
   dificuldade: 3,
-  imagem: "/covers/react_native.png",
+  imagem: `${import.meta.env.BASE_URL}covers/react_native.png`,
   destaque: true,
   accent: "#2052a3",
   stats: [
@@ -26,24 +26,24 @@ export const p2ReactNative: Project = {
   ],
   prints: [
     {
-      src: "/prints/P2-React-Native/home_mobileP2.png",
+      src: `${import.meta.env.BASE_URL}prints/P2-React-Native/home_mobileP2.png`,
       legenda: "Home com as aplicações",
     },
     {
-      src: "/prints/P2-React-Native/frases_mobileP2.png",
+      src: `${import.meta.env.BASE_URL}prints/P2-React-Native/frases_mobileP2.png`,
       legenda: "Gerador de frases",
     },
-    { src: "/prints/P2-React-Native/imc_mobileP2.png", legenda: "Calculadora de IMC" },
+    { src: `${import.meta.env.BASE_URL}prints/P2-React-Native/imc_mobileP2.png`, legenda: "Calculadora de IMC" },
     {
-      src: "/prints/P2-React-Native/tarefas_mobileP2.png",
+      src: `${import.meta.env.BASE_URL}prints/P2-React-Native/tarefas_mobileP2.png`,
       legenda: "Lista de tarefas",
     },
     {
-      src: "/prints/P2-React-Native/calc_mobileP2.png",
+      src: `${import.meta.env.BASE_URL}prints/P2-React-Native/calc_mobileP2.png`,
       legenda: "Calculadora",
     },
     {
-      src: "/prints/P2-React-Native/calc_dark_mobileP2.png",
+      src: `${import.meta.env.BASE_URL}prints/P2-React-Native/calc_dark_mobileP2.png`,
       legenda: "Calculadora com tema escuro",
     }
   ],

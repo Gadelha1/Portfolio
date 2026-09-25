@@ -30,35 +30,35 @@ export const mobileLeads: Project = {
   ],
   prints: [
     {
-      src: "/prints/mobile-leads/login_mobile.png",
+      src: `${import.meta.env.BASE_URL}prints/mobile-leads/login_mobile.png`,
       legenda: "Tela de login do aplicativo",
     },
     {
-      src: "/prints/mobile-leads/lead_list_mobile.png",
+      src: `${import.meta.env.BASE_URL}prints/mobile-leads/lead_list_mobile.png`,
       legenda: "Home do aplicativo com listagem de leads",
     },
     {
-      src: "/prints/mobile-leads/lead_menu_mobile.png",
+      src: `${import.meta.env.BASE_URL}prints/mobile-leads/lead_menu_mobile.png`,
       legenda: "Menu ActionSheet do lead, com opções para favoritar,agendar atividade, transferir para outro corretor ou arquivar o lead"
     },
     {
-      src: "/prints/mobile-leads/lead_details_mobile.png",
+      src: `${import.meta.env.BASE_URL}prints/mobile-leads/lead_details_mobile.png`,
       legenda: "Tela de detalhes do lead com as atividades relacionadas e botão para adicionar nova atividade",
     },
     {
-      src: "/prints/mobile-leads/insights_mobile.png",
+      src: `${import.meta.env.BASE_URL}prints/mobile-leads/insights_mobile.png`,
       legenda: "Tela de insights do aplicativo, algoritmo futuramente fará a análise dos leads e apresentará insights para o usuário",
     },
     {
-      src: "/prints/mobile-leads/tags_mobile.png",
+      src: `${import.meta.env.BASE_URL}prints/mobile-leads/tags_mobile.png`,
       legenda: "Tela de etiquetas do imóvel. O usuário pode criar etiquetas para organizar os leads, e cada lead pode ter várias etiquetas.",
     },
     {
-      src: "/prints/mobile-leads/lead_actions_mobile.png",
+      src: `${import.meta.env.BASE_URL}prints/mobile-leads/lead_actions_mobile.png`,
       legenda: "Ações de encerramento de atendimento para cada lead, permitindo cadastrar proposta, transferir ou arquivar"
     },
     {
-      src: "/prints/mobile-leads/users_management_mobile.png",
+      src: `${import.meta.env.BASE_URL}prints/mobile-leads/users_management_mobile.png`,
       legenda: "Tela de gerenciamento de usuários do aplicativo, contando com criação, edição e exclusão, além de atribuição de permissões para cada usuário",
     }
   ],

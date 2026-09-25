@@ -15,7 +15,7 @@ export const lojaVisgoDeJaca: Project = {
   dificuldade: 3,
   destaque: false,
   accent: "#5ABC49",
-  imagem: "/covers/visgo.jpg",
+  imagem: `${import.meta.env.BASE_URL}covers/visgo.jpg`,
   stats: [
     { label: "Front-end", value: 5 },
     { label: "Back-end", value: 2 },
@@ -27,15 +27,15 @@ export const lojaVisgoDeJaca: Project = {
   ],
   prints: [
     {
-      src: "/prints/loja-visgo-de-jaca/home_visgo.png",
+      src: `${import.meta.env.BASE_URL}prints/loja-visgo-de-jaca/home_visgo.png`,
       legenda: "Home do site da loja Visgo de Jaca",
     },
     {
-      src: "/prints/loja-visgo-de-jaca/gerenciamento_visgo.png",
+      src: `${import.meta.env.BASE_URL}prints/loja-visgo-de-jaca/gerenciamento_visgo.png`,
       legenda: "Página de gerenciamento do admin para produtos e usuários",
     },
     {
-      src: "/prints/loja-visgo-de-jaca/login_visgo.png",
+      src: `${import.meta.env.BASE_URL}prints/loja-visgo-de-jaca/login_visgo.png`,
       legenda: "Tela de login de usuário",
     }
   ],

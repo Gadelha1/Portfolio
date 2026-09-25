@@ -91,7 +91,7 @@ export function ProjectDetail({ project }: { project: Project }) {
               rel="noopener noreferrer"
               className="btn-github"
             >
-              <img src="/icons/github.svg" alt="" />
+              <img src={`${import.meta.env.BASE_URL}icons/github.svg`} alt="" />
               Código-fonte
               <span className="sr-only">(abre em nova aba)</span>
             </a>
@@ -103,7 +103,7 @@ export function ProjectDetail({ project }: { project: Project }) {
               rel="noopener noreferrer"
               className="btn-github"
             >
-              <img src="/icons/github.svg" alt="" />
+              <img src={`${import.meta.env.BASE_URL}icons/github.svg`} alt="" />
               Back-end
               <span className="sr-only">(abre em nova aba)</span>
             </a>
@@ -115,7 +115,7 @@ export function ProjectDetail({ project }: { project: Project }) {
               rel="noopener noreferrer"
               className="btn-snack"
             >
-              <img src="/icons/expo.svg" alt="" />
+              <img src={`${import.meta.env.BASE_URL}icons/expo.svg`} alt="" />
               Snack Expo
               <span className="sr-only">(abre em nova aba)</span>
             </a>

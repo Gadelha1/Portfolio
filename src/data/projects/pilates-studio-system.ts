@@ -27,15 +27,15 @@ export const pilatesStudioSystem: Project = {
   ],
   prints: [
     {
-      src: "/prints/pilates-studio-system/login_pilates.png",
+      src: `${import.meta.env.BASE_URL}prints/pilates-studio-system/login_pilates.png`,
       legenda: "Tela de login do sistema",
     },
     {
-      src: "/prints/pilates-studio-system/home_pilates.png",
+      src: `${import.meta.env.BASE_URL}prints/pilates-studio-system/home_pilates.png`,
       legenda: "Home do sistema",
     },
     {
-      src: "/prints/pilates-studio-system/planos_pilates.png",
+      src: `${import.meta.env.BASE_URL}prints/pilates-studio-system/planos_pilates.png`,
       legenda: "Modal de planos",
     },
   ],

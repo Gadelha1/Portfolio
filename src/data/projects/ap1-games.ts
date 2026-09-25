@@ -29,19 +29,19 @@ export const ap1Games: Project = {
   ],
   prints: [
     {
-      src: "/prints/ap1-games/home_games.png",
+      src: `${import.meta.env.BASE_URL}prints/ap1-games/home_games.png`,
       legenda: "Catálogo em grade"
     },
     {
-      src: "/prints/ap1-games/details_games.png",
+      src: `${import.meta.env.BASE_URL}prints/ap1-games/details_games.png`,
       legenda: "Tela de detalhes do jogo",
     },
     {
-      src: "/prints/ap1-games/favs_games.png",
+      src: `${import.meta.env.BASE_URL}prints/ap1-games/favs_games.png`,
       legenda: "Lista de favoritos",
     },
     {
-      src: "/prints/ap1-games/profile_games.png",
+      src: `${import.meta.env.BASE_URL}prints/ap1-games/profile_games.png`,
       legenda: "Perfil com descrição e links"
     },
   ],

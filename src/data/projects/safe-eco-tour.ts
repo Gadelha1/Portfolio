@@ -15,7 +15,7 @@ export const safeEcoTour: Project = {
   dificuldade: 2,
   destaque: false,
   accent: "#659237",
-  imagem: "/covers/safe_branco.png",
+  imagem: `${import.meta.env.BASE_URL}covers/safe_branco.png`,
   stats: [
     { label: "HTML", value: 5 },
     { label: "CSS (Flexbox)", value: 4 },
@@ -29,11 +29,11 @@ export const safeEcoTour: Project = {
   ],
   prints: [
     {
-      src: "/prints/safe-eco-tour/home_safeecotour.png",
+      src: `${import.meta.env.BASE_URL}prints/safe-eco-tour/home_safeecotour.png`,
       legenda: "Home do site de turismo",
     },
     {
-      src: "/prints/safe-eco-tour/sider_safeecotour.png",
+      src: `${import.meta.env.BASE_URL}prints/safe-eco-tour/sider_safeecotour.png`,
       legenda: "Menu lateral aberto",
     },
   ],

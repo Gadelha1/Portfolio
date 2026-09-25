@@ -29,15 +29,15 @@ export const frontendLeads: Project = {
   ],
   prints: [
     {
-      src: "/prints/frontend-leads/login_rofe.png",
+      src: `${import.meta.env.BASE_URL}prints/frontend-leads/login_rofe.png`,
       legenda: "Tela de login",
     },
     {
-      src: "/prints/frontend-leads/home_rofe.png",
+      src: `${import.meta.env.BASE_URL}prints/frontend-leads/home_rofe.png`,
       legenda: "Home do gerenciador de leads",
     },
     {
-      src: "/prints/frontend-leads/sider_rofe.png",
+      src: `${import.meta.env.BASE_URL}prints/frontend-leads/sider_rofe.png`,
       legenda: "Sider do sistema",
     }
   ],
