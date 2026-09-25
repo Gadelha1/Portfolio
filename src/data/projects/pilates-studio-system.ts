@@ -13,7 +13,7 @@ export const pilatesStudioSystem: Project = {
   capitulo: "3º Semestre · Banco de Dados Não Relacionais",
   dificuldade: 4,
   destaque: false,
-  accent: "#2f9e44",
+  accent: "#FFCFAD",
   stats: [
     { label: "Java & Spring Boot", value: 2 },
     { label: "Front-end (JS)", value: 5 },

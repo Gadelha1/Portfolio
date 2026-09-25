@@ -14,7 +14,7 @@ export const lojaVisgoDeJaca: Project = {
   capitulo: "2º Semestre · Desenvolvimento Web",
   dificuldade: 3,
   destaque: false,
-  accent: "#b8860b",
+  accent: "#5ABC49",
   imagem: "/covers/visgo.jpg",
   stats: [
     { label: "Front-end", value: 5 },

@@ -14,7 +14,8 @@ export const safeEcoTour: Project = {
   capitulo: "1º Semestre · Projeto Interdisciplinar",
   dificuldade: 2,
   destaque: false,
-  accent: "#0d9488",
+  accent: "#659237",
+  imagem: "/covers/safe_branco.png",
   stats: [
     { label: "HTML", value: 5 },
     { label: "CSS (Flexbox)", value: 4 },

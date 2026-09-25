@@ -5,8 +5,8 @@ export const mobileLeadsV2: Project = {
   titulo: "Mobile Leads V2",
   subtitulo: "Projeto Interdisciplinar · 6º Semestre",
   descricao:
-    "Continuidade do gerenciador de leads imobiliários, agora desenvolvido em Kotlin tanto no front-end quanto no back-end (Kotlin com Spring), novamente integrando aplicações separadas. Assim como a versão do 5º semestre, a aplicação foi planejada para ser multiusuário, e não apenas para uma única empresa, já que o negócio com a primeira versão para a imobiliária que era o cliente não foi pra frente.",
-  stack: ["Kotlin", "Spring Boot", "PostgreSQL", "AWS"],
+    "Continuidade do gerenciador de leads imobiliários, agora desenvolvido em Kotlin tanto no front-end quanto no back-end (Kotlin com Spring), novamente integrando aplicações separadas. Não houveram mudanças significativas na interface do usuário, mas tudo foi reescrito do zero, com o back-end agora sendo desenvolvido em Kotlin com Spring Boot, que permitiu uma transição mais suave do Java com Spring, e o front-end sendo desenvolvido com Kotlin Multiplatforma, que permite compartilhar código entre Android, Web e iOS.",
+  stack: ["Kotlin Multiplataforma", "Spring Boot", "PostgreSQL"],
   links: {
     github: "https://github.com/100esperanca/mobile-leads-v2",
     backend: "https://github.com/100esperanca/backend-leads-v2",

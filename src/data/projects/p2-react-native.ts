@@ -12,7 +12,8 @@ export const p2ReactNative: Project = {
   },
   capitulo: "4º Semestre · Desenvolvimento Mobile",
   dificuldade: 3,
-  destaque: false,
+  imagem: "/covers/react_native.png",
+  destaque: true,
   accent: "#2052a3",
   stats: [
     { label: "React", value: 4 },
