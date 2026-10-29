@@ -26,10 +26,12 @@ export function Hero() {
               <span className="hero-detail-label">Semestre</span>
               <span className="hero-detail-value">{profile.semestre_atual}</span>
             </span>
+
             <span className="hero-detail">
               <span className="hero-detail-label">Conclusão</span>
               <span className="hero-detail-value">{profile.conclusao_curso}</span>
             </span>
+
             <span className="hero-detail">
               <span className="hero-detail-label">Local</span>
               <span className="hero-detail-value">{profile.cidade}</span>
@@ -38,8 +40,14 @@ export function Hero() {
             <span className="hero-detail">
               <span className="hero-detail-label">Idiomas</span>
               <ul>
-                <li className="hero-detail-value">{profile.idiomas[0]}</li>
-                <li className="hero-detail-value">{profile.idiomas[1]}</li>
+                {profile.idiomas.map((idioma) => (
+                  <li className="hero-detail-value" key={idioma.nome}>
+                    {idioma.nome}{" "}
+                    <span className="hero-detail-label language-level">
+                      {idioma.nivel}
+                    </span>
+                  </li>
+                ))}
               </ul>
             </span>
           </div>

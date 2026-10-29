@@ -121,6 +121,10 @@
   color: var(--color-gold-400);
 }
 
+.language-level {
+  font-size: 0.55em;
+}
+
 .hero-actions {
   display: flex;
   gap: 0.75rem;
