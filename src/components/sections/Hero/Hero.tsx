@@ -34,6 +34,14 @@ export function Hero() {
               <span className="hero-detail-label">Local</span>
               <span className="hero-detail-value">{profile.cidade}</span>
             </span>
+
+            <span className="hero-detail">
+              <span className="hero-detail-label">Idiomas</span>
+              <ul>
+                <li className="hero-detail-value">{profile.idiomas[0]}</li>
+                <li className="hero-detail-value">{profile.idiomas[1]}</li>
+              </ul>
+            </span>
           </div>
 
           <div className="hero-actions">
